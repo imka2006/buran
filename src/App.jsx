@@ -67,7 +67,7 @@ function App() {
         emailjs
             .sendForm(
                 "service_eyag9rg", //YOUR_SERVICE_ID
-                "template_fazdwlj", // YOUR_TEMPLATE_ID
+                "template_38546ac", // YOUR_TEMPLATE_ID
                 form.current,
                 "-jbATkprbge7Ao0hh" // YOUR_PUBLIC_KEY
             )
@@ -86,7 +86,7 @@ function App() {
         emailjs
             .sendForm(
                 "service_eyag9rg", //YOUR_SERVICE_ID
-                "template_fazdwlj", // YOUR_TEMPLATE_ID
+                "template_38546ac", // YOUR_TEMPLATE_ID
                 form.current,
                 "-jbATkprbge7Ao0hh" // YOUR_PUBLIC_KEY
             )
