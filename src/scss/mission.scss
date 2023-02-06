@@ -5,6 +5,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    &-block {
+        border-radius: 15px;
+    }
     &-wrapper {
         background: url(../img/mission/fon.png) no-repeat;
         background-size: cover;

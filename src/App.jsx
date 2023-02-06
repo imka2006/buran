@@ -656,7 +656,7 @@ function App() {
                                         <img src={check} alt="check" />
                                     </button>
                                 ) : (
-                                    <button className="help-send center">
+                                    <button className="help-send center btn">
                                         {t("helpSend")}
                                     </button>
                                 )}

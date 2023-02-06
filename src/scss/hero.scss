@@ -23,9 +23,10 @@
     .hero {
         background: url(../img/hero/bg.png) no-repeat center;
         background-size: cover;
-        padding: 95px 0 30px;
+        padding: 65px 0 170px;
         &-btn {
             display: block;
+            margin: 90px auto 0;
         }
         &-title {
             margin: 0 auto;

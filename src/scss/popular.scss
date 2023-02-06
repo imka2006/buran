@@ -2,6 +2,10 @@
     font-family: "Gilroy";
     position: relative;
     padding: 60px 0 38px;
+    &-bg {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
     &-fon {
         position: absolute;
         top: 26px;
@@ -60,6 +64,7 @@
         max-width: 390px;
         background: #031927;
         box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
     }
     &-info {
         margin: 17px 24px 24px;
