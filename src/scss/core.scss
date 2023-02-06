@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+    font-family: 'Raleway';
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+button {
+    border: none;
+}
+input {
+    border: none;
+    outline: none;
+}
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,p {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1240px;
+}
+.wrapper-fon {
+    background: url(../img/hero/bg.png) no-repeat center;
+    background-size:cover ;
+    padding: 24px 0 350px;
+}
+.title {
+    font-family: 'Gilroy';
+}
+.descr {
+    font-family: 'Gilroy';
+}
+.btn {
+    font-family: 'Gilroy';
+    border-radius: 5px;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 49px;
+    cursor: pointer;
+    min-width: 151px;
+}
+
+@media screen and (max-width:1255px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width:1050px) {
+    .wrapper-fon {
+        background: unset;
+        padding: unset;
+    }
+}

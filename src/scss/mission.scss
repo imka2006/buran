@@ -1,0 +1,86 @@
+.mission {
+    padding: 60px 0 80px;
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-wrapper {
+        background: url(../img/mission/fon.png) no-repeat;
+        background-size: cover;
+        padding: 142px 54px 100px;
+        &.active {
+            padding: 210px 54px;
+        }
+    }
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: #0b5563;
+        max-width: 620px;
+        box-sizing: border-box;
+    }
+    &-title {
+        font-weight: 800;
+        font-size: 28px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #0b5563;
+        margin: 20px 0;
+    }
+    &-descr {
+        font-family: "Gilroy";
+        font-weight: 400;
+        font-size: 22px;
+        color: #101010;
+        max-width: 509px;
+        line-height: 150%;
+        span {
+            color: #3c91d7;
+            cursor: pointer;
+        }
+    }
+
+    &-another {
+        overflow: hidden;
+        height: 620px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .mission {
+        &-content {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+    }
+}
+@media screen and (max-width: 675px) {
+    .mission {
+        margin-top: 0;
+        &-wrapper {
+           background: unset;
+           padding: 0;
+        }
+        &-block {
+            max-width: 100%;
+        }
+        &-another {
+            overflow: unset;
+            height: auto;
+        }
+        &-name {
+            font-size: 13px;
+        }
+        &-title {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        &-descr {
+            font-size: 18px;
+        }
+    }
+}

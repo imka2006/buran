@@ -1,0 +1,76 @@
+{
+    "listOne":"About",
+    "listTwo":"Tours",
+    "listThree":"Blog",
+    "listFour":"Photogallery",
+    "listFive":"Reviews",
+    
+    "heroTitle":"We build bridges between Kyrgyzstan and the world",
+    "heroBtn":"View all tours",
+    
+    "missionName": "OUR MISSION",
+    "missionTitle": "ABOUT US AND OUR MISSION",
+    "missionDescrFalse": "Kyrgyzstan, a country located in Central Asia, is known for its breathtaking natural beauty. From its snow-capped peaks to its lush green valleys, the landscape of Kyrgyzstan is truly awe-inspiring.",
+    "missionDescrTrue": "Kyrgyzstan, a country located in Central Asia, is known for its breathtaking natural beauty. From its snow-capped peaks to its lush green valleys, the landscape of Kyrgyzstan is truly awe-inspiring. The Tian Shan mountain range runs through the country, offering endless opportunities for hiking and climbing. The Issyk-Kul lake, the second-largest mountain lake in the world, is a popular destination for swimming, boating, and fishing. The lake is surrounded by stunning mountain ranges and is a great spot for taking in the natural beauty of Kyrgyzstan.",
+    "missionBtnFalse":"read more",
+    "hide":"hide",
+    
+    "toursName":"TOURS",
+    "toursTitle":"WHY CUSTOMERS CHOOSE US?",
+    "toursDescrOne":"The company has extensive experience in organizing tours and events, including for people with disabilities",
+    "toursDescrTwo":"The company offers a wide range of tour options, from simple to extreme",
+    "toursDescrThree":"The company is engaged in the preservation and popularization of Kyrgyzstan's unique culture and heritage",
+    "toursDescrFour":"The company's guides are highly knowledgeable and experienced in the local area and culture. They are passionate about Kyrgyzstan and eager to share their love of the country with their clients",
+    
+    "popularName":"TOURS",
+    "popularTitle":"Popular tours",  
+    "popularText":"Choose your tour and start traveling with us!",
+    "popularTime":"11 days/10 nights",
+    "popularSubtitle":"Mountain tour",
+    "popularDifficulty":"4/5 difficulty",
+    "popularDescr":"Hike to the land of mountain peaks and waterfalls for experienced travelers",
+    "popularSom":"som",
+    "popularView":"View tour",
+    "popularbtn":"View all tours",
+
+    "blogName":"BLOG",
+    "blogTitle":"Our Guides",
+    "blogBtn":"View all guides",
+    "blogSubtitle":"What to pack for trip to Kyrgyzstan mountains?",
+    "blogTime":"Jan 28, 2023",
+    "blogDescr":"When traveling to Kyrgyzstan and planning to go to the mountains, it is important to pack the following items...",
+    "blogView":"Learn more",
+
+    "photoName":"GALLERY",
+    "photoTitle":"Photogallery",
+    "photoText":"Capture the moments of your life with us",
+    "photoBtn":"More photos",
+
+    "reviewsName": "REVIEWS",
+    "reviewsTitle": "Reviews",
+    "reviewsText": "Beautiful moments and memories to last a lifetime",
+    "reviewsCountry": "England 2022",
+    "reviewsDesccr": "The trip to Kyrgyzstan with Mountain View Tour Company was an incredible experience, full of breathtaking mountain views and rich cultural immersion. The tour guides were ...",
+    "reviewsMore": "read more",
+    "reviewsDesccrFull": "The trip to Kyrgyzstan with Mountain View Tour Company was an incredible experience, full of breathtaking mountain views and rich cultural immersion. The tour guides were knowledgeable and passionate, providing fascinating insights into the history and customs of the country. The itinerary was well-planned, allowing ample time to explore the stunning landscapes and local villages, while also incorporating a comfortable mix of relaxation and adventure activities. The accommodations were top-notch, offering comfortable rooms and delicious food, and the transportation was efficient and convenient. Overall, the trip was a fantastic combination of natural beauty, cultural discovery, and leisure, and the Mountain View Tour Company provided an unforgettable experience.",
+
+    "helpTitle":"Helping you choose a tour",
+    "helpText":"Leave your contact details and we will get back to you",
+    "helpName":"Name",
+    "helpPhone":"Phone number",
+    "helpSend":"Send",
+
+    "footerAddress":"Kyrgyzstan, Bishkek",
+    "footerText":"Follow us on social media:",
+    "footerAnotherTitle":"Or contact us by phone:",
+    "footerAnotherText":"Opening hours: 10:00 - 18:00 (local time - UTS + 6:00 Astana)",
+
+    "modelTitle": "Leave your contact details and we will get back to you",
+    "modelName": "Name",
+    "modelNameDescr": "Enter your name",
+    "modelNum": "Phone number",
+    "modelNumDescr": "Enter your telephone number",
+    "modelSend": "Send"
+
+   
+}

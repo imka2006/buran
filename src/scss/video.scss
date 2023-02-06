@@ -1,0 +1,16 @@
+.video {
+    &-video {
+        width: 100%;
+        min-height: 485px;
+    }
+}
+@media screen and (max-width:650px) {
+    .video-video {
+        min-height: 350px;
+    }
+}
+@media screen and (max-width:400px) {
+    .video-video {
+        min-height: 200px;
+    }
+}

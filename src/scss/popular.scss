@@ -1,0 +1,189 @@
+.popular {
+    font-family: "Gilroy";
+    position: relative;
+    padding: 60px 0 38px;
+    &-fon {
+        position: absolute;
+        top: 26px;
+        z-index: -1;
+        left: 75%;
+        transform: translateX(-100%);
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        color: #0b5563;
+        font-family: "Raleway";
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 40px;
+        color: #0b5563;
+        margin: 14px 0;
+    }
+    &-text {
+        font-weight: 400;
+        font-size: 20px;
+        color: #0b5563;
+    }
+    &-btn {
+        padding: 16px 20px;
+        border: 1px solid #3c91d7;
+        font-weight: 500;
+        font-size: 20px;
+        color: #3c91d7;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background: #2081c5;
+            color: white;
+        }
+    }
+    &-wrapper {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: auto;
+        gap: 20px;
+        &::-webkit-scrollbar {
+            width: 0;
+          }
+    }
+
+    &-block {
+        max-width: 390px;
+        background: #031927;
+        box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.1);
+    }
+    &-info {
+        margin: 17px 24px 24px;
+    }
+    &-time {
+        font-weight: 400;
+        font-size: 16px;
+        color: #f1f1f1;
+    }
+    &-subtitle {
+        font-weight: 500;
+        font-size: 24px;
+        color: #f1f1f1;
+        margin: 12px 0 17px;
+    }
+    &-difficulty {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #f1f1f1;
+    }
+    &-descr {
+        margin: 18px 0 33px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #f1f1f1;
+    }
+    &-price {
+        font-weight: 700;
+        font-size: 24px;
+        color: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-view {
+        height: 52px;
+        background: #3c91d7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+        width: 100%;
+        margin-top: 16px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background: #2081c5;
+        }
+    }
+    &-btn-another {
+        margin: 30px auto 0;
+        display: none;
+        font-weight: 500;
+        font-size: 16px;
+        border: 1px solid #3C91D7;
+        padding: 16px 20px;
+        color: #3c91d7;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            color: white;
+            background: #3C91D7;
+        }
+    }
+}
+@media screen and (max-width: 690px) {
+    .popular {
+        &-block {
+            max-width: 225px;
+        }
+        &-bg {
+            max-width: 225px;
+        }
+        &-time {
+            font-size: 12px;
+        }
+        &-info {
+            margin: 8px 8px 18px;
+        }
+        &-subtitle {
+            font-size: 18px;
+            margin: 5px 0 15px;
+        }
+        &-descr {
+            font-size: 12px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        &-difficulty {
+            display: none;
+        }
+        &-price {
+            font-size: 18px;
+        }
+        &-view {
+            height: 31px;
+            font-size: 16px;
+        }
+        &-title {
+            margin: 12px 0 18px;
+            font-size: 20px;
+        }
+        &-text {
+            display: none;
+        }
+        &-name {
+            font-size: 16px;
+        }
+        &-btn {
+            display: none;
+        }
+        &-btn-another {
+            display: block;
+        }
+        &-wrapper {
+            margin: 0;
+        }
+        &-fon {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.blog {
+    padding: 60px 0 36px;
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        color: #0b5563;
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 40px;
+        color: #0b5563;
+        margin-top: 20px;
+    }
+    &-content {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    &-wrapper {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-btn {
+        padding: 16px 20px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #3c91d7;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid #3c91d7;
+        &:hover {
+            background: #3c91d7;
+            color: white;
+        }
+    }
+    &-block {
+        background: rgba(60, 145, 215, 0.1);
+        max-width: 390px;
+    }
+    &-info {
+        margin: 24px 19px;
+    }
+    &-subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        color: #101010;
+    }
+    &-time {
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+        margin: 14px 0 25px;
+        display: inline-block;
+        font-family: 'Gilroy';
+    }
+    &-descr {
+        font-weight: 400;
+        font-size: 18px;
+        color: #101010;
+        font-family: 'Gilroy';
+    }
+    &-view {
+        margin-top: 40px;
+        width: 170px;
+        height: 52px;
+        background: #0a476f;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: 'Gilroy';
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:1230px) {
+    .blog {
+        display: none;
+    }
+}

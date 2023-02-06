@@ -1,0 +1,45 @@
+.hero {
+    font-family: "Gilroy";
+    &-title {
+        font-weight: 700;
+        font-size: 64px;
+        color: #f1f1f1;
+        max-width: 813px;
+        margin: 185px auto 0;
+        text-align: center;
+    }
+    &-btn {
+        display: none;
+        margin: 135px auto 0;
+        background: #3c91d7;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        padding: 14px 16px;
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .hero {
+        background: url(../img/hero/bg.png) no-repeat center;
+        background-size: cover;
+        padding: 95px 0 30px;
+        &-btn {
+            display: block;
+        }
+        &-title {
+            margin: 0 auto;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .hero-title {
+        font-size: 45px;
+    }   
+}
+@media screen and (max-width: 580px) {
+    .hero-title {
+        font-size: 24px;
+        max-width: 325px;
+    }   
+}

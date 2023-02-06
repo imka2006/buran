@@ -1,0 +1,101 @@
+.help {
+    font-family: "Gilroy";
+    padding: 95px 0 185px;
+    background: url(../img//help/bg.png) no-repeat;
+    background-size: cover;
+    &-unskil {
+        display: flex;
+        justify-content: end;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 130px;
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 32px;
+        color: #f9f9f9;
+    }
+    &-text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #f9f9f9;
+        margin: 16px 0 40px;
+    }
+    &-wrapper {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 15px;
+    }
+    &-input {
+        width: 207px;
+        height: 40px;
+        padding: 0 10px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+    }
+    &-send {
+        padding: 14px 16px;
+        background: #3c91d7;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffffff;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background: #2081c5;
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .help {
+        padding: 30px 0;
+        background: unset;
+        &-unskil {
+            display: flex;
+            justify-content: center;
+        }
+        &-content {
+            margin: 0;
+        }
+        &-title {
+            font-weight: 800;
+            font-size: 20px;
+            color: #0b5563;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 14px;
+            color: #0b5563;
+            margin: 30px 0;
+        }
+    }
+}
+@media screen and (max-width: 535px) {
+    .help {
+        &-wrapper {
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 30px;
+        }
+        &-input {
+            width: 260px;
+        }
+    }
+}
+@media screen and (max-width: 380px) {
+    .help {
+        &-input {
+            width: 95%;
+        }
+        &-send {
+            width: 100%;
+            padding: 9px 0;
+        }
+    }
+}

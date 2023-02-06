@@ -1,0 +1,138 @@
+.reviews {
+    position: relative;
+    padding: 60px 0 45px;
+    &-decoration {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        z-index: -1;
+    }
+    &-name {
+        font-weight: 700;
+        font-size: 16px;
+        color: #0b5563;
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 40px;
+        color: #0b5563;
+        margin: 14px 0;
+    }
+    &-text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #0b5563;
+    }
+    &-wrapper {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    &-block {
+        background: #e9f2f8;
+        padding: 26px 17px 42px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 610px;
+        box-sizing: border-box;
+        font-family: 'Gilroy';
+    }
+    &-more {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    &-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        color: #101010;
+    }
+    &-time {
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &-descr {
+        font-weight: 400;
+        font-size: 16px;
+        color: #101010;
+        span {
+            color: #3C91D7;
+        }
+    }
+}
+@media screen and (max-width:1255px) {
+    .reviews {
+        &-block {
+            max-width: 450px;
+        }
+        &-wrapper {
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:970px) {
+    .reviews {
+        &-block {
+            max-width: 370px;
+            padding: 24px 15px;
+            align-items: start;
+        }
+    }
+}
+@media screen and (max-width:810px) {
+    .reviews {
+        &-block {
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width:505px) {
+    .reviews {
+        &-text {
+            display: none;
+        }
+        &-name {
+            font-size: 16px;
+        }
+        &-title {
+            margin: 12px 0 18px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        &-subtitle {
+            font-size: 18px;
+        }
+        &-time {
+            font-size: 14px;
+        }
+        &-descr {
+            font-size: 15px;
+        }
+    }
+}
+@media screen and (max-width:380px) {
+    .reviews {
+       
+            
+        &-block {
+            display: block;
+        }
+        &-ava {
+            float: left;
+            margin-right:15px;
+        }
+        &-more {
+            flex-direction: column;
+            align-items: unset;
+            margin-top: 35px;
+        }
+        &-descr {
+            margin-top: 30px;
+        }
+    }
+}
