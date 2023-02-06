@@ -41,11 +41,11 @@ export const Header = () => {
                     <img src={logo} alt="logo" className="header-logo" />
                     <img src={logoSecond} alt="logo" className="header-logo-sec" />
                     <ul className="header-list">
-                        <li className="header-item"><a href="#" className="header-list-link">{t("listOne")}</a></li>
-                        <li className="header-item"><a href="#" className="header-list-link">{t("listTwo")}</a></li>
-                        <li className="header-item"><a href="#" className="header-list-link">{t("listThree")}</a></li>
-                        <li className="header-item"><a href="#" className="header-list-link">{t("listFour")}</a></li>
-                        <li className="header-item"><a href="#" className="header-list-link">{t("listFive")}</a></li>
+                        <li className="header-item"><a href="#mission" className="header-list-link">{t("listOne")}</a></li>
+                        <li className="header-item"><a href="#popular" className="header-list-link">{t("listTwo")}</a></li>
+                        <li className="header-item"><a href="#blog" className="header-list-link">{t("listThree")}</a></li>
+                        <li className="header-item"><a href="#photo" className="header-list-link">{t("listFour")}</a></li>
+                        <li className="header-item"><a href="#reviews" className="header-list-link">{t("listFive")}</a></li>
                     </ul>
                     <div className="header-menu">
                         <div onClick={() => setBurgerLang(!burgerLang)} className={burgerLang ? 'header-language active' : 'header-language'}>

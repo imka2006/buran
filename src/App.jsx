@@ -156,7 +156,7 @@ function App() {
                     </a>
                 </section>
             </div>
-            <section className="mission">
+            <section id="mission" className="mission">
                 <div className="container">
                     <div className="mission-content">
                         <img
@@ -269,7 +269,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section className="popular">
+            <section id="popular" className="popular">
                 <img src={fon} alt="fon" className="popular-fon" />
                 <div className="container">
                     <div className="popular-content">
@@ -397,7 +397,7 @@ function App() {
                     </button>
                 </div>
             </section>
-            <section className="blog">
+            <section id="blog" className="blog">
                 <div className="container">
                     <div className="blog-content">
                         <div className="blog-head">
@@ -413,7 +413,7 @@ function App() {
                             <img
                                 src={photo}
                                 alt="photo"
-                                className="block-photo"
+                                className="blog-photo"
                             />
                             <div className="blog-info">
                                 <h2 className="blog-subtitle">
@@ -423,7 +423,7 @@ function App() {
                                     {t("blogTime")}
                                 </span>
                                 <p className="blog-descr">{t("blogDescr")}</p>
-                                <button className="blog-view">
+                                <button className="blog-view btn">
                                     {t("blogView")}
                                 </button>
                             </div>
@@ -432,7 +432,7 @@ function App() {
                             <img
                                 src={photo}
                                 alt="photo"
-                                className="block-photo"
+                                className="blog-photo"
                             />
                             <div className="blog-info">
                                 <h2 className="blog-subtitle">
@@ -442,7 +442,7 @@ function App() {
                                     {t("blogTime")}
                                 </span>
                                 <p className="blog-descr">{t("blogDescr")}</p>
-                                <button className="blog-view">
+                                <button className="blog-view btn">
                                     {t("blogView")}
                                 </button>
                             </div>
@@ -451,7 +451,7 @@ function App() {
                             <img
                                 src={photo}
                                 alt="photo"
-                                className="block-photo"
+                                className="blog-photo"
                             />
                             <div className="blog-info">
                                 <h2 className="blog-subtitle">
@@ -461,7 +461,7 @@ function App() {
                                     {t("blogTime")}
                                 </span>
                                 <p className="blog-descr">{t("blogDescr")}</p>
-                                <button className="blog-view">
+                                <button className="blog-view btn">
                                     {t("blogView")}
                                 </button>
                             </div>
@@ -469,7 +469,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section className="photo">
+            <section id="photo" className="photo">
                 <div className="photo-wrapper container">
                     <div className="photo-haad">
                         <span className="photo-name">{t("photoName")}</span>
@@ -526,7 +526,7 @@ function App() {
                     {t("photoBtn")} <img src={insta} alt="instagram" />
                 </a>
             </section>
-            <section className="reviews">
+            <section id="reviews" className="reviews">
                 <img
                     src={decoration}
                     alt="decoration"

@@ -18,11 +18,11 @@ export const Footer = () => {
                 <div className="footer-content">
                     <img src={logo} alt="logo" className="footer-logo" />
                     <ul className="footer-list">
-                        <li className="footer-item"><a href="#" className="footer-link">{t("listOne")}</a></li>
-                        <li className="footer-item"><a href="#" className="footer-link">{t("listTwo")}</a></li>
-                        <li className="footer-item"><a href="#" className="footer-link">{t("listThree")} </a></li>
-                        <li className="footer-item"><a href="#" className="footer-link">{t("listFour")}</a></li>
-                        <li className="footer-item"><a href="#" className="footer-link">{t("listFive")}</a></li>
+                        <li className="footer-item"><a href="#mission" className="footer-link">{t("listOne")}</a></li>
+                        <li className="footer-item"><a href="#popular" className="footer-link">{t("listTwo")}</a></li>
+                        <li className="footer-item"><a href="#blog" className="footer-link">{t("listThree")} </a></li>
+                        <li className="footer-item"><a href="#photo" className="footer-link">{t("listFour")}</a></li>
+                        <li className="footer-item"><a href="#reviews" className="footer-link">{t("listFive")}</a></li>
                     </ul>
                     <ul className="footer-another-info">
                         <li className="footer-another-item"><h2 className="footer-mini-title">{t("footerAnotherTitle")}</h2></li>

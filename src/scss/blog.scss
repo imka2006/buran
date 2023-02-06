@@ -38,6 +38,7 @@
     &-block {
         background: rgba(60, 145, 215, 0.1);
         max-width: 390px;
+        border-radius: 15px;
     }
     &-info {
         margin: 24px 19px;
@@ -71,6 +72,10 @@
         color: #ffffff;
         font-family: 'Gilroy';
         cursor: pointer;
+    }
+    &-photo {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
     }
 }
 @media screen and (max-width:1230px) {
