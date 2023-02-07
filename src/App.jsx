@@ -3,6 +3,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/header/Header";
 import "./index.scss";
 import block from "./img/mission/block.png";
+import missionFon from "./img/mission/fon.png";
 import check from "./img/model/check.svg";
 import map from "./img/tours/map.svg";
 import line from "./img/tours/line.svg";
@@ -166,8 +167,9 @@ function App() {
                         />
                         <div className="mission-another">
                             <div className="mission-wrapper">
+                                <img src={missionFon} alt="fon" className="mission-fon" />
                                 <span className="mission-name">
-                                    OUR MISSION
+                                    {t("missionOur")}
                                 </span>
                                 <h2 className="mission-title">
                                     {t("missionTitle")}
