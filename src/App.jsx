@@ -202,7 +202,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <section className="video">
+            <section id="video" className="video">
                 <iframe
                     className="video-video"
                     width="auto"
