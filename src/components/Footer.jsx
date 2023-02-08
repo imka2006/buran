@@ -38,7 +38,7 @@ export const Footer = () => {
                     <div className="footer-cocial-wrapper">
                       <p className="footer-text">{t("footerText")}</p>
                       <ul className="footer-cocial">
-                            <li className="footer-cocial-item"><a href="https://www.instagram.com/" target="_blank" className="footer-cocial-link"><img src={instagram} alt="instagram" /></a></li>
+                            <li className="footer-cocial-item"><a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="footer-cocial-link"><img src={instagram} alt="instagram" /></a></li>
                             <li className="footer-cocial-item"><a href="https://www.twitch.tv/" target="_blank" className="footer-cocial-link"><img src={hz} alt="hz" /></a></li>
                             <li className="footer-cocial-item"><a href="https://www.youtube.com/" target="_blank" className="footer-cocial-link"><img src={youtube} alt="youtube" /></a></li>
                         </ul>

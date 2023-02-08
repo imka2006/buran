@@ -60,7 +60,7 @@ export const Header = () => {
                             </ul>
                         </div>
                         <ul className="header-cocial">
-                            <li className="header-cocial-item"><a href="https://www.instagram.com/" target="_blank" className="header-cocial-link"><img src={instagram} alt="instagram" /></a></li>
+                            <li className="header-cocial-item"><a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="header-cocial-link"><img src={instagram} alt="instagram" /></a></li>
                             <li className="header-cocial-item"><a href="https://www.twitch.tv/" target="_blank" className="header-cocial-link"><img src={hz} alt="hz" /></a></li>
                             <li className="header-cocial-item"><a href="https://www.youtube.com/" target="_blank" className="header-cocial-link"><img src={youtube} alt="youtube" /></a></li>
                         </ul>

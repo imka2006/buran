@@ -20,6 +20,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
+        max-width: 100%;
     }
     &-name {
         font-weight: 700;
@@ -43,19 +44,10 @@
         font-size: 22px;
         color: #101010;
         max-width: 509px;
-        line-height: 150%;
         span {
             color: #3c91d7;
             cursor: pointer;
         }
-    }
-
-    &-another {
-        overflow: hidden;
-        height: 620px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 @media screen and (max-width: 1250px) {

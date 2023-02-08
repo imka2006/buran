@@ -24,7 +24,7 @@ const Burger = () => {
                 <li className="burger-item"><a href="#photo" className="burger-link">{t("listFour")}</a></li>
                 <li className="burger-item"><a href="#reviews" className="burger-link">{t("listFive")}</a></li>
                 <li className="burger-item burger-item-another">
-                <a href="https://www.instagram.com/" target="_blank" className="burger-cocial-link"><img src={instagram} alt="instagram" /></a>
+                <a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="burger-cocial-link"><img src={instagram} alt="instagram" /></a>
                 <a href="https://www.twitch.tv/" target="_blank" className="burger-cocial-link"><img src={hz} alt="hz" /></a>
                 <a href="https://www.youtube.com/" target="_blank" className="burger-cocial-link"><img src={youtube} alt="youtube" /></a>
                 </li>

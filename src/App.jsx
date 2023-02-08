@@ -152,7 +152,7 @@ function App() {
                 <Header />
                 <section className="hero">
                     <h1 className="hero-title">{t("heroTitle")}</h1>
-                    <a href="#" className="hero-btn btn">
+                    <a href="#popular" className="hero-btn btn">
                         {t("heroBtn")}
                     </a>
                 </section>
@@ -165,7 +165,6 @@ function App() {
                             alt="imgBlcok"
                             className="mission-block"
                         />
-                        <div className="mission-another">
                             <div className="mission-wrapper">
                                 <img src={missionFon} alt="fon" className="mission-fon" />
                                 <span className="mission-name">
@@ -200,7 +199,6 @@ function App() {
                                     </p>
                                 )}
                             </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -481,7 +479,7 @@ function App() {
                         </p>
                     </div>
                     <a
-                        href="https://www.instagram.com/kettik.kg/"
+                        href="https://www.instagram.com/mountain.view.kg/"
                         target="_blank"
                         className="photo-btn btn"
                     >

@@ -4,7 +4,7 @@
         font-weight: 700;
         font-size: 64px;
         color: #f1f1f1;
-        max-width: 813px;
+        max-width: 1000px;
         margin: 185px auto 0;
         text-align: center;
     }
@@ -23,19 +23,26 @@
     .hero {
         background: url(../img/hero/bg.png) no-repeat center;
         background-size: cover;
-        padding: 65px 0 170px;
+        padding: 65px 30px 170px;
         &-btn {
             display: block;
             margin: 90px auto 0;
         }
         &-title {
             margin: 0 auto;
+            font-size: 48px;
+            max-width: 750px;
         }
     }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 715px) {
+    .hero {
+        padding-left:15px ;
+        padding-right: 15px; ;
+    }
     .hero-title {
-        font-size: 45px;
+        font-size: 30px;
+        max-width: 550px;
     }   
 }
 @media screen and (max-width: 580px) {
