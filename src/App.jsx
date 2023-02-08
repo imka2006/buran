@@ -491,8 +491,9 @@ function App() {
                         slidesPerView={"auto"}
                         spaceBetween={30}
                         autoplay={{
-                            delay: 4000,
+                            delay: 3000,
                             reverseDirection: false,
+                            disableOnInteraction: false,
                         }}
                         modules={[Autoplay]}
                     >
@@ -506,8 +507,9 @@ function App() {
                         slidesPerView={"auto"}
                         spaceBetween={30}
                         autoplay={{
-                            delay: 4000,
+                            delay: 3000,
                             reverseDirection: true,
+                            disableOnInteraction: false,
                         }}
                         modules={[Autoplay]}
                     >
