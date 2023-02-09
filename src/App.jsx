@@ -22,7 +22,6 @@ import imgFive from "./img/slider/people/imgFive.webp";
 import imgSix from "./img/slider/people/imgSix.webp";
 import imgSeven from "./img/slider/people/imgSeven.webp";
 import imgEight from "./img/slider/people/imgEight.webp";
-import imgNine from "./img/slider/people/imgNine.webp";
 import imgTen from "./img/slider/people/imgTen.webp";
 
 import NimgOne from "./img/slider/nature/imgOne.webp";
@@ -59,7 +58,6 @@ function App() {
         imgSix,
         imgSeven,
         imgEight,
-        imgNine,
         imgTen,
     ];
     const imagesNature = [
