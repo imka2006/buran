@@ -20,7 +20,6 @@ import imgTwo from "./img/slider/people/imgTwo.webp";
 import imgThree from "./img/slider/people/imgThree.webp";
 import imgFive from "./img/slider/people/imgFive.webp";
 import imgSix from "./img/slider/people/imgSix.webp";
-import imgSeven from "./img/slider/people/imgSeven.webp";
 import imgEight from "./img/slider/people/imgEight.webp";
 import imgTen from "./img/slider/people/imgTen.webp";
 
@@ -56,7 +55,6 @@ function App() {
         imgThree,
         imgFive,
         imgSix,
-        imgSeven,
         imgEight,
         imgTen,
     ];
