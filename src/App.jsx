@@ -8,16 +8,40 @@ import check from "./img/model/check.svg";
 import map from "./img/tours/map.svg";
 import line from "./img/tours/line.svg";
 import fon from "./img/popular/fon.svg";
-import diagram from "./img/popular/diagram.svg";
-import bg from "./img/popular/bg.svg";
-import photo from "./img/blog/photo.png";
+import popularImgOne from "./img/popular/imgOne.png";
+import popularImgThree from "./img/popular/imgThree.png";
+import pdf from "./img/popular/icon.png";
 import ava from "./img/reviews/ava.svg";
 import decoration from "./img/reviews/decoration.svg";
-import imgOne from "./img/photo/imgOne.png";
-import imgTwo from "./img/photo/imgTwo.png";
-import imgThree from "./img/photo/imgThree.png";
-import imgFour from "./img/photo/imgFour.png";
-import imgFive from "./img/photo/imgFive.png";
+
+import vaOne from "./img/reviews/vaOne.jpg";
+import vaTwo from "./img/reviews/vaTwo.jpg";
+
+import imgOne from "./img/slider/people/imgOne.JPG";
+import imgTwo from "./img/slider/people/imgTwo.JPG";
+import imgThree from "./img/slider/people/imgThree.JPG";
+import imgFour from "./img/slider/people/imgFour.JPG";
+import imgFive from "./img/slider/people/imgFive.jpg";
+import imgSix from "./img/slider/people/imgSix.jpg";
+import imgSeven from "./img/slider/people/imgSeven.jpg";
+import imgEight from "./img/slider/people/imgEight.jpg";
+import imgNine from "./img/slider/people/imgNine.jpg";
+import imgTen from "./img/slider/people/imgTen.jpg";
+
+import NimgOne from "./img/slider/nature/imgOne.jpg";
+import NimgTwo from "./img/slider/nature/imgTwo.jpg";
+import NimgThree from "./img/slider/nature/imgThree.jpg";
+import NimgFour from "./img/slider/nature/imgFour.jpg";
+import NimgFive from "./img/slider/nature/imgFive.jpg";
+import NimgSix from "./img/slider/nature/imgSix.jpg";
+import NimgSeven from "./img/slider/nature/imgSeven.jpg";
+import NimgEight from "./img/slider/nature/imgEight.jpg";
+import NimgNine from "./img/slider/nature/imgNine.jpg";
+import NimgTen from "./img/slider/nature/imgTen.jpg";
+import NimgEleven from "./img/slider/nature/imgEleven.jpg";
+import NimgTwelf from "./img/slider/nature/imgTwelf.jpg";
+import NimgThirteen from "./img/slider/nature/imgThirteen.jpg";
+
 import insta from "./img/photo/insta.svg";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
@@ -28,7 +52,7 @@ import { Autoplay } from "swiper";
 
 function App() {
     const form = useRef();
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [missionShow, setMissionShow] = useState(false);
     const [model, setModel] = useState(false);
     const images = [
@@ -37,26 +61,32 @@ function App() {
         imgThree,
         imgFour,
         imgFive,
-        imgOne,
-        imgTwo,
-        imgThree,
-        imgFour,
-        imgFive,
+        imgSix,
+        imgSeven,
+        imgEight,
+        imgNine,
+        imgTen,
     ];
-    const imagesRew = [
-        imgFive,
-        imgFour,
-        imgThree,
-        imgTwo,
-        imgOne,
-        imgFive,
-        imgFour,
-        imgThree,
-        imgTwo,
-        imgOne,
+    const imagesNature = [
+        NimgOne,
+        NimgTwo,
+        NimgThree,
+        NimgFour,
+        NimgFive,
+        NimgSix,
+        NimgSeven,
+        NimgEight,
+        NimgNine,
+        NimgTen,
+        NimgEleven,
+        NimgTwelf,
+        NimgThirteen,
     ];
     const [send, setSend] = useState(false);
     const [sendSec, setSendSec] = useState(false);
+    const [reviewsOne, setReviewsOne] = useState(false)
+    const [reviewsTwo, setReviewsTwo] = useState(false)
+
     if (model) {
         document.querySelector("body").style.overflow = "hidden";
     } else {
@@ -289,32 +319,20 @@ function App() {
                         </button>
                     </div>
                     <div className="popular-wrapper">
+
                         <div className="popular-block">
-                            <img src={bg} alt="img" className="popular-bg" />
+                            <img src={popularImgOne} alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
-                                    {t("popularTime")}
+                                    {t("popularTimeOne")}
                                 </span>
                                 <h4 className="popular-subtitle">
-                                    {t("popularSubtitle")}
+                                    {t("popularSubtitleOne")}
                                 </h4>
-                                <div className="popular-difficulty">
-                                    <img
-                                        src={diagram}
-                                        alt="diagram"
-                                        className="popular-diagram"
-                                    />
-                                    {t("popularDifficulty")}
-                                </div>
-                                <p className="popular-descr">
-                                    {t("popularDescr")}
-                                </p>
-                                <div className="popular-price">
-                                    <span className="popular-dollar">500$</span>
-                                    <span className="popular-som">
-                                        40000{t("popularSom")}
-                                    </span>
-                                </div>
+                                    <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1TegYoTbNjmqRHtrv_BntgIzWQyXX-Adr/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                        <img src={pdf} alt="pdf" className="popular-pdf" />
+                                        {t("view")}
+                                    </a>
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -324,31 +342,18 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src={bg} alt="img" className="popular-bg" />
+                            <img src={NimgSix} alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
-                                    {t("popularTime")}
+                                    {t("popularTimeTwo")}
                                 </span>
                                 <h4 className="popular-subtitle">
-                                    {t("popularSubtitle")}
+                                    {t("popularSubtitleTwo")}
                                 </h4>
-                                <div className="popular-difficulty">
-                                    <img
-                                        src={diagram}
-                                        alt="diagram"
-                                        className="popular-diagram"
-                                    />
-                                    {t("popularDifficulty")}
-                                </div>
-                                <p className="popular-descr">
-                                    {t("popularDescr")}
-                                </p>
-                                <div className="popular-price">
-                                    <span className="popular-dollar">500$</span>
-                                    <span className="popular-som">
-                                        40000{t("popularSom")}
-                                    </span>
-                                </div>
+                                 <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1e9ySfTGljxTufui9YgZ0_BcAMljpLPna/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                        <img src={pdf} alt="pdf" className="popular-pdf" />
+                                        {t("view")}
+                                    </a>
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -358,31 +363,18 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src={bg} alt="img" className="popular-bg" />
+                            <img src={popularImgThree} alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
-                                    {t("popularTime")}
+                                    {t("popularTimeThree")}
                                 </span>
                                 <h4 className="popular-subtitle">
-                                    {t("popularSubtitle")}
+                                    {t("popularSubtitleThree")}
                                 </h4>
-                                <div className="popular-difficulty">
-                                    <img
-                                        src={diagram}
-                                        alt="diagram"
-                                        className="popular-diagram"
-                                    />
-                                    {t("popularDifficulty")}
-                                </div>
-                                <p className="popular-descr">
-                                    {t("popularDescr")}
-                                </p>
-                                <div className="popular-price">
-                                    <span className="popular-dollar">500$</span>
-                                    <span className="popular-som">
-                                        40000{t("popularSom")}
-                                    </span>
-                                </div>
+                                 <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1smYXGAKAXRYcvyXF_C0AZnc8J9OY01si/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                        <img src={pdf} alt="pdf" className="popular-pdf" />
+                                        {t("view")}
+                                    </a>
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -391,82 +383,33 @@ function App() {
                                 </button>
                             </div>
                         </div>
+                        <div className="popular-block">
+                            <img src={NimgEight} alt="img" className="popular-bg" />
+                            <div className="popular-info">
+                                <span className="popular-time">
+                                    {t("popularTimeFour")}
+                                </span>
+                                <h4 className="popular-subtitle">
+                                    {t("popularSubtitleFour")}
+                                </h4>
+                                 <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1Ei_HD47-3SYX6E1npTIhHcrxiPSHETFe/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                        <img src={pdf} alt="pdf" className="popular-pdf" />
+                                        {t("view")}
+                                    </a>
+                                <button
+                                    onClick={() => setModel(!model)}
+                                    className="popular-view btn"
+                                >
+                                    {t("popularView")}
+                                </button>
+                            </div>
+                        </div>
+                        
+                    
                     </div>
                     <button className="popular-btn-another btn">
                         {t("popularbtn")}
                     </button>
-                </div>
-            </section>
-            <section id="blog" className="blog">
-                <div className="container">
-                    <div className="blog-content">
-                        <div className="blog-head">
-                            <span className="blog-name">{t("blogName")}</span>
-                            <div className="blog-title title">
-                                {t("blogTitle")}
-                            </div>
-                        </div>
-                        <button className="blog-btn btn">{t("blogBtn")}</button>
-                    </div>
-                    <div className="blog-wrapper">
-                        <div className="blog-block">
-                            <img
-                                src={photo}
-                                alt="photo"
-                                className="blog-photo"
-                            />
-                            <div className="blog-info">
-                                <h2 className="blog-subtitle">
-                                    {t("blogSubtitle")}
-                                </h2>
-                                <span className="blog-time">
-                                    {t("blogTime")}
-                                </span>
-                                <p className="blog-descr">{t("blogDescr")}</p>
-                                <button className="blog-view btn">
-                                    {t("blogView")}
-                                </button>
-                            </div>
-                        </div>
-                        <div className="blog-block">
-                            <img
-                                src={photo}
-                                alt="photo"
-                                className="blog-photo"
-                            />
-                            <div className="blog-info">
-                                <h2 className="blog-subtitle">
-                                    {t("blogSubtitle")}
-                                </h2>
-                                <span className="blog-time">
-                                    {t("blogTime")}
-                                </span>
-                                <p className="blog-descr">{t("blogDescr")}</p>
-                                <button className="blog-view btn">
-                                    {t("blogView")}
-                                </button>
-                            </div>
-                        </div>
-                        <div className="blog-block">
-                            <img
-                                src={photo}
-                                alt="photo"
-                                className="blog-photo"
-                            />
-                            <div className="blog-info">
-                                <h2 className="blog-subtitle">
-                                    {t("blogSubtitle")}
-                                </h2>
-                                <span className="blog-time">
-                                    {t("blogTime")}
-                                </span>
-                                <p className="blog-descr">{t("blogDescr")}</p>
-                                <button className="blog-view btn">
-                                    {t("blogView")}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
             <section id="photo" className="photo">
@@ -482,6 +425,7 @@ function App() {
                         href="https://www.instagram.com/mountain.view.kg/"
                         target="_blank"
                         className="photo-btn btn"
+                        rel="noreferrer"
                     >
                         {t("photoBtn")} <img src={insta} alt="instagram" />
                     </a>
@@ -492,14 +436,15 @@ function App() {
                         spaceBetween={30}
                         autoplay={{
                             delay: 3000,
-                            reverseDirection: false,
                             disableOnInteraction: false,
+                            reverseDirection: true,
                         }}
+                      
                         modules={[Autoplay]}
                     >
-                        {images.map((item) => (
+                        {images.map((item ) => (
                             <SwiperSlide>
-                                <img src={item} alt="img" />
+                                <img src={item} key={item} alt="img" />
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -508,14 +453,13 @@ function App() {
                         spaceBetween={30}
                         autoplay={{
                             delay: 3000,
-                            reverseDirection: true,
                             disableOnInteraction: false,
                         }}
                         modules={[Autoplay]}
                     >
-                        {imagesRew.map((item) => (
+                        {imagesNature.map((item) => (
                             <SwiperSlide>
-                                <img src={item} alt="img" />
+                                <img src={item} key={item} alt="img" />
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -524,6 +468,7 @@ function App() {
                     href="https://www.instagram.com/kettik.kg/"
                     target="_blank"
                     className="photo-btn-another btn"
+                    rel="noreferrer"
                 >
                     {t("photoBtn")} <img src={insta} alt="instagram" />
                 </a>
@@ -536,98 +481,72 @@ function App() {
                 />
                 <div className="container">
                     <div className="reviews-content">
-                        <span className="reviews-name">{t("reviewsName")}</span>
                         <h2 className="reviews-title title">
                             {t("reviewsTitle")}
                         </h2>
-                        <p className="reviews-text description">
-                            {t("reviewsText")}
-                        </p>
-                        <div className="reviews-wrapper">
+                       <div className="reviews-wrapper">
                             <div className="reviews-block">
+                                <div className="reviews-ava-wrapper">
                                 <img
-                                    src={ava}
+                                    src={vaOne}
                                     alt="avatar"
                                     className="reviews-ava"
                                 />
+                                </div>
                                 <div className="reviews-info">
                                     <div className="reviews-more">
                                         <span className="reviews-subtitle">
-                                            Sophia A.
-                                        </span>
-                                        <span className="reviews-time">
-                                            {t("reviewsCountry")}
+                                        Laura S.
                                         </span>
                                     </div>
-                                    <p className="reviews-descr">
-                                        {t("reviewsDesccr")}{" "}
-                                        <span>{t("reviewsMore")}</span>
-                                    </p>
+                                    {
+                                        reviewsOne ?  (
+                                            <p className="reviews-descr">
+                                                {t("reviewsDescOneFull")}{" "}
+                                                <span onClick={() => setReviewsOne(!reviewsOne)}>{t("hide")}</span>
+                                            </p>
+                                        ) : (
+                                            <p className="reviews-descr">
+                                                {t("reviewsDescOne")}{" "}
+                                                <span onClick={() => setReviewsOne(!reviewsOne)}>{t("reviewsMore")}</span>
+                                            </p>
+                                        )
+                                    }
+
+                                    
                                 </div>
                             </div>
                             <div className="reviews-block">
+                                <div className="reviews-ava-wrapper">
                                 <img
-                                    src={ava}
+                                    src={vaTwo}
                                     alt="avatar"
                                     className="reviews-ava"
                                 />
+                                </div>
+                                
                                 <div className="reviews-info">
                                     <div className="reviews-more">
                                         <span className="reviews-subtitle">
-                                            Sophia A.
-                                        </span>
-                                        <span className="reviews-time">
-                                            {t("reviewsCountry")}
+                                        Syrga A.
                                         </span>
                                     </div>
-                                    <p className="reviews-descr">
-                                        {t("reviewsDesccr")}{" "}
-                                        <span>{t("reviewsMore")}</span>
-                                    </p>
+                                    {
+                                        reviewsTwo ?  (
+                                            <p className="reviews-descr">
+                                                {t("reviewsDescTwoFull")}{" "}
+                                                <span onClick={() => setReviewsTwo(!reviewsTwo)}>{t("hide")}</span>
+                                            </p>
+                                        ) : (
+                                            <p className="reviews-descr">
+                                                {t("reviewsDescTwo")}{" "}
+                                                <span onClick={() => setReviewsTwo(!reviewsTwo)}>{t("reviewsMore")}</span>
+                                            </p>
+                                        )
+                                    }
                                 </div>
                             </div>
-                            <div className="reviews-block">
-                                <img
-                                    src={ava}
-                                    alt="avatar"
-                                    className="reviews-ava"
-                                />
-                                <div className="reviews-info">
-                                    <div className="reviews-more">
-                                        <span className="reviews-subtitle">
-                                            Sophia A.
-                                        </span>
-                                        <span className="reviews-time">
-                                            {t("reviewsCountry")}
-                                        </span>
-                                    </div>
-                                    <p className="reviews-descr">
-                                        {t("reviewsDesccr")}{" "}
-                                        <span>{t("reviewsMore")}</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="reviews-block">
-                                <img
-                                    src={ava}
-                                    alt="avatar"
-                                    className="reviews-ava"
-                                />
-                                <div className="reviews-info">
-                                    <div className="reviews-more">
-                                        <span className="reviews-subtitle">
-                                            Sophia A.
-                                        </span>
-                                        <span className="reviews-time">
-                                            {t("reviewsCountry")}
-                                        </span>
-                                    </div>
-                                    <p className="reviews-descr">
-                                        {t("reviewsDesccr")}{" "}
-                                        <span>{t("reviewsMore")}</span>
-                                    </p>
-                                </div>
-                            </div>
+        
                         </div>
                     </div>
                 </div>

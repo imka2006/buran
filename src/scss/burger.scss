@@ -59,6 +59,13 @@
         font-size: 22px;
         color: #101010;
         cursor: pointer;
+        
+        a {
+            transition: .3s;
+            &:hover {
+                color: #3C91D7;
+            }
+        }
     }
     &-item-another {
         display: flex;

@@ -12,6 +12,14 @@
         right: 0;
         bottom: 0;
     }
+    &-item  {
+        a {
+            transition: .3s;
+            &:hover {
+                color: #3C91D7;
+            }
+        }
+    }
     &-list {
         display: flex;
         flex-direction: column;
@@ -59,7 +67,9 @@
         font-weight: 500;
         font-size: 14px;
         color: #0b5563;
+        
     }
+
 }
 @media screen and (max-width: 910px) {
     .footer {
@@ -68,7 +78,7 @@
         &-list,
         &-fon {
             display: none;
-        }
+        } 
         &-content {
             flex-direction: column;
             gap: 30px;

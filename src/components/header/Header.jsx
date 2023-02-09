@@ -2,8 +2,8 @@ import React from 'react'
 import logo from '../../img/header/logo.svg'
 import logoSecond from '../../img/header/logoSecond.svg'
 import instagram from '../../img/header/instagram.svg'
-import hz from '../../img/header/hz.svg'
-import youtube from '../../img/header/youtube.svg'
+import whatsapp from '../../img/header/hatsapp.svg'
+import mail from '../../img/header/mail.svg'
 import lang from '../../img/header/lang.svg'
 import russian from '../../img/header/russian.svg'
 import english from '../../img/header/english.svg'
@@ -43,7 +43,6 @@ export const Header = () => {
                     <ul className="header-list">
                         <li className="header-item"><a href="#mission" className="header-list-link">{t("listOne")}</a></li>
                         <li className="header-item"><a href="#popular" className="header-list-link">{t("listTwo")}</a></li>
-                        <li className="header-item"><a href="#blog" className="header-list-link">{t("listThree")}</a></li>
                         <li className="header-item"><a href="#photo" className="header-list-link">{t("listFour")}</a></li>
                         <li className="header-item"><a href="#reviews" className="header-list-link">{t("listFive")}</a></li>
                     </ul>
@@ -61,8 +60,8 @@ export const Header = () => {
                         </div>
                         <ul className="header-cocial">
                             <li className="header-cocial-item"><a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="header-cocial-link"><img src={instagram} alt="instagram" /></a></li>
-                            <li className="header-cocial-item"><a href="https://www.twitch.tv/" target="_blank" className="header-cocial-link"><img src={hz} alt="hz" /></a></li>
-                            <li className="header-cocial-item"><a href="https://www.youtube.com/" target="_blank" className="header-cocial-link"><img src={youtube} alt="youtube" /></a></li>
+                            <li className="header-cocial-item"><a href="https://api.whatsapp.com/send?phone=996501008998" target="_blank" className="header-cocial-link"><img src={whatsapp} alt="hz" /></a></li>
+                            <li className="header-cocial-item"><a href="mailto:mview.office@gmail.com" target="_blank" className="header-cocial-link"><img src={mail} alt="youtube" /></a></li>
                         </ul>
                     </div>
                 </div>

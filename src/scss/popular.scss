@@ -35,6 +35,18 @@
         font-size: 20px;
         color: #0b5563;
     }
+    &-som {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #f1f1f1;
+        img {
+            width: 25px;
+        }
+    }
     &-btn {
         padding: 16px 20px;
         border: 1px solid #3c91d7;
@@ -58,6 +70,10 @@
         &::-webkit-scrollbar {
             width: 0;
           }
+    }
+    &-bg {
+        width: 390px;
+        height: 295px;
     }
 
     &-block {
@@ -141,7 +157,8 @@
             max-width: 225px;
         }
         &-bg {
-            max-width: 225px;
+            width: 225px;
+            height: 170px;
         }
         &-time {
             font-size: 12px;
