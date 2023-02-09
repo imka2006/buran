@@ -363,7 +363,7 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src={popularImgThree} alt="img" className="popular-bg" />
+                            <img src="https://too.kg/wp-content/uploads/b12dba8f-0b47-466f-bf7c-df7822b2822e-1024x686.jpg" alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeThree")}
