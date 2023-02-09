@@ -174,6 +174,7 @@ function App() {
             </div>
 
             <div className="wrapper-fon">
+                <Header />
                 <section className="hero">
                     <h1 className="hero-title">{t("heroTitle")}</h1>
                     <a href="#popular" className="hero-btn btn">
