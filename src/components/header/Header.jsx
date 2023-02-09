@@ -60,7 +60,7 @@ export const Header = () => {
                         </div>
                         <ul className="header-cocial">
                             <li className="header-cocial-item"><a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="header-cocial-link"><img src={instagram} alt="instagram" /></a></li>
-                            <li className="header-cocial-item"><a href="https://api.whatsapp.com/send?phone=996501008998" target="_blank" className="header-cocial-link"><img src={whatsapp} alt="hz" /></a></li>
+                            <li className="header-cocial-item"><a href="https://api.whatsapp.com/send?phone=996501008988" target="_blank" className="header-cocial-link"><img src={whatsapp} alt="hz" /></a></li>
                             <li className="header-cocial-item"><a href="mailto:mview.office@gmail.com" target="_blank" className="header-cocial-link"><img src={mail} alt="youtube" /></a></li>
                         </ul>
                     </div>
