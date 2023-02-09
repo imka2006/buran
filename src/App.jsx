@@ -2,45 +2,41 @@ import React, { useRef, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/header/Header";
 import "./index.scss";
-import block from "./img/mission/block.png";
+import block from "./img/mission/block.webp";
 import missionFon from "./img/mission/fon.png";
 import check from "./img/model/check.svg";
 import map from "./img/tours/map.svg";
 import line from "./img/tours/line.svg";
 import fon from "./img/popular/fon.svg";
 import popularImgOne from "./img/popular/imgOne.png";
-import popularImgThree from "./img/popular/imgThree.png";
 import pdf from "./img/popular/icon.png";
-import ava from "./img/reviews/ava.svg";
 import decoration from "./img/reviews/decoration.svg";
 
 import vaOne from "./img/reviews/vaOne.jpg";
 import vaTwo from "./img/reviews/vaTwo.jpg";
 
-import imgOne from "./img/slider/people/imgOne.JPG";
-import imgTwo from "./img/slider/people/imgTwo.JPG";
-import imgThree from "./img/slider/people/imgThree.JPG";
-import imgFour from "./img/slider/people/imgFour.JPG";
-import imgFive from "./img/slider/people/imgFive.jpg";
-import imgSix from "./img/slider/people/imgSix.jpg";
-import imgSeven from "./img/slider/people/imgSeven.jpg";
-import imgEight from "./img/slider/people/imgEight.jpg";
-import imgNine from "./img/slider/people/imgNine.jpg";
-import imgTen from "./img/slider/people/imgTen.jpg";
+import imgOne from "./img/slider/people/imgOne.webp";
+import imgTwo from "./img/slider/people/imgTwo.webp";
+import imgThree from "./img/slider/people/imgThree.webp";
+import imgFive from "./img/slider/people/imgFive.webp";
+import imgSix from "./img/slider/people/imgSix.webp";
+import imgSeven from "./img/slider/people/imgSeven.webp";
+import imgEight from "./img/slider/people/imgEight.webp";
+import imgNine from "./img/slider/people/imgNine.webp";
+import imgTen from "./img/slider/people/imgTen.webp";
 
-import NimgOne from "./img/slider/nature/imgOne.jpg";
-import NimgTwo from "./img/slider/nature/imgTwo.jpg";
-import NimgThree from "./img/slider/nature/imgThree.jpg";
-import NimgFour from "./img/slider/nature/imgFour.jpg";
-import NimgFive from "./img/slider/nature/imgFive.jpg";
-import NimgSix from "./img/slider/nature/imgSix.jpg";
-import NimgSeven from "./img/slider/nature/imgSeven.jpg";
-import NimgEight from "./img/slider/nature/imgEight.jpg";
-import NimgNine from "./img/slider/nature/imgNine.jpg";
-import NimgTen from "./img/slider/nature/imgTen.jpg";
-import NimgEleven from "./img/slider/nature/imgEleven.jpg";
-import NimgTwelf from "./img/slider/nature/imgTwelf.jpg";
-import NimgThirteen from "./img/slider/nature/imgThirteen.jpg";
+import NimgOne from "./img/slider/nature/imgOne.webp";
+import NimgTwo from "./img/slider/nature/imgTwo.webp";
+import NimgThree from "./img/slider/nature/imgThree.webp";
+import NimgFour from "./img/slider/nature/imgFour.webp";
+import NimgFive from "./img/slider/nature/imgFive.webp";
+import NimgSix from "./img/slider/nature/imgSix.webp";
+import NimgSeven from "./img/slider/nature/imgSeven.webp";
+import NimgEight from "./img/slider/nature/imgEight.webp";
+import NimgNine from "./img/slider/nature/imgNine.webp";
+import NimgTen from "./img/slider/nature/imgTen.webp";
+import NimgEleven from "./img/slider/nature/imgEleven.webp";
+import NimgTwelf from "./img/slider/nature/imgTwelf.webp";
 
 import insta from "./img/photo/insta.svg";
 import { useTranslation } from "react-i18next";
@@ -59,7 +55,6 @@ function App() {
         imgOne,
         imgTwo,
         imgThree,
-        imgFour,
         imgFive,
         imgSix,
         imgSeven,
@@ -80,7 +75,6 @@ function App() {
         NimgTen,
         NimgEleven,
         NimgTwelf,
-        NimgThirteen,
     ];
     const [send, setSend] = useState(false);
     const [sendSec, setSendSec] = useState(false);
@@ -92,6 +86,7 @@ function App() {
     } else {
         document.querySelector("body").style.overflow = "unset";
     }
+   
     const sendEmail = (e) => {
         e.preventDefault();
         setSend(true);
@@ -179,7 +174,6 @@ function App() {
             </div>
 
             <div className="wrapper-fon">
-                <Header />
                 <section className="hero">
                     <h1 className="hero-title">{t("heroTitle")}</h1>
                     <a href="#popular" className="hero-btn btn">
@@ -197,9 +191,6 @@ function App() {
                         />
                             <div className="mission-wrapper">
                                 <img src={missionFon} alt="fon" className="mission-fon" />
-                                <span className="mission-name">
-                                    {t("missionOur")}
-                                </span>
                                 <h2 className="mission-title">
                                     {t("missionTitle")}
                                 </h2>
@@ -321,7 +312,7 @@ function App() {
                     <div className="popular-wrapper">
 
                         <div className="popular-block">
-                            <img src={popularImgOne} alt="img" className="popular-bg" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Issyk-Kulmeer.jpg" alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeOne")}
@@ -363,7 +354,7 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src="https://too.kg/wp-content/uploads/b12dba8f-0b47-466f-bf7c-df7822b2822e-1024x686.jpg" alt="img" className="popular-bg" />
+                            <img src="https://i.pinimg.com/originals/e0/51/84/e05184dffb69817245cb78916edbf252.png" alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeThree")}
@@ -384,7 +375,7 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src={NimgEight} alt="img" className="popular-bg" />
+                            <img src="https://www.youlinmagazine.com/articles/heavenly-lake-in-mid-tian-shan-mountains.jpg" alt="img" className="popular-bg" />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeFour")}
