@@ -81,9 +81,6 @@
 }
 @media screen and (max-width:1255px) {
     .reviews {
-        &-block {
-            max-width: 450px;
-        }
         &-wrapper {
             justify-content: center;
         }
@@ -92,7 +89,6 @@
 @media screen and (max-width:970px) {
     .reviews {
         &-block {
-            max-width: 370px;
             padding: 24px 15px;
             align-items: start;
         }
@@ -103,6 +99,11 @@
         &-block {
             max-width: 100%;
         }
+    }
+}
+@media screen and (max-width:695px) {
+    .reviews-info {
+        max-width: 320px;
     }
 }
 @media screen and (max-width:505px) {
@@ -127,6 +128,11 @@
         &-descr {
             font-size: 15px;
         }
+        &-info {
+            max-width: 200px;
+        }
+        
+        
     }
 }
 @media screen and (max-width:380px) {
@@ -146,7 +152,6 @@
             margin-top: 35px;
         }
         &-descr {
-            margin-top: 30px;
         }
     }
 }
