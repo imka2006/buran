@@ -456,7 +456,7 @@ function App() {
                     </Swiper>
                 </div>
                 <a
-                    href="https://www.instagram.com/kettik.kg/"
+                    href="https://www.instagram.com/mountain.view.kg/"
                     target="_blank"
                     className="photo-btn-another btn"
                     rel="noreferrer"
