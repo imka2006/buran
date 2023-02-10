@@ -304,9 +304,9 @@ function App() {
                                 {t("popularText")}
                             </p>
                         </div>
-                        <button className="popular-btn btn">
+                        <a href="https://www.instagram.com/mountain.view.kg/" className="popular-btn btn">
                             {t("popularbtn")}
-                        </button>
+                        </a>
                     </div>
                     <div className="popular-wrapper">
                         <div className="popular-block">
@@ -525,7 +525,7 @@ function App() {
                                 <div className="reviews-info">
                                     <div className="reviews-more">
                                         <span className="reviews-subtitle">
-                                        Laura S.
+                                        Begay A.
                                         </span>
                                     </div>
                                     {
@@ -557,7 +557,7 @@ function App() {
                                 <div className="reviews-info">
                                     <div className="reviews-more">
                                         <span className="reviews-subtitle">
-                                        Syrga A.
+                                        Zhanat M.
                                         </span>
                                     </div>
                                     {
