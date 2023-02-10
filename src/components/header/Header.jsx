@@ -12,9 +12,9 @@ import { useState } from 'react'
 import { useTranslation } from "react-i18next";
 import Burger from './Burger'
 
-export const Header = () => {
+export const Header = ({ chengePdf }) => {
     const [burgerLang, setBurgerLang] = useState(false)
-    const [activeLang, setActiveLang] = useState("English")
+    const  [activeLang, setActiveLang] = useState("English")
     const [allLang, setAllLang] = useState([{
         lang:"Русский",
         flag: russian
@@ -29,9 +29,11 @@ export const Header = () => {
         setActiveLang(item)
     }
 
+
     const changeLanguage = (language) => {
         language === "Русский" ?  i18n.changeLanguage("Russian") : i18n.changeLanguage(language)
     }
+
 
   return (
         <header className='header'>
@@ -53,7 +55,7 @@ export const Header = () => {
                             <ul className="header-language-list">
                                 {
                                     allLang.map((item) => (
-                                        <li  onClick={() => {setBurgerLang(!burgerLang); chengeLang(item.lang); changeLanguage(item.lang)} } className="header-language-item"><img src={item.flag} alt={item.flag} /> {item.lang}</li>
+                                        <li  onClick={() => {setBurgerLang(!burgerLang); chengeLang(item.lang); changeLanguage(item.lang)} } className="header-language-item"><img key={item.lang} src={item.flag} alt={item.flag} /> {item.lang}</li>
                                     ))
                                 }
                             </ul>
@@ -67,5 +69,6 @@ export const Header = () => {
                 </div>
             </div>
         </header>
-  )
+  );
+ 
 }

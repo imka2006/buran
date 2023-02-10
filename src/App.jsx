@@ -46,7 +46,7 @@ import { Autoplay } from "swiper";
 
 function App() {
     const form = useRef();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [missionShow, setMissionShow] = useState(false);
     const [model, setModel] = useState(false);
     const images = [
@@ -121,6 +121,8 @@ function App() {
                 }
             );
     };
+   
+    console.log(i18n.language);
 
     return (
         <div className="App">
@@ -307,7 +309,6 @@ function App() {
                         </button>
                     </div>
                     <div className="popular-wrapper">
-
                         <div className="popular-block">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Issyk-Kulmeer.jpg" alt="img" className="popular-bg" />
                             <div className="popular-info">
@@ -317,10 +318,20 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleOne")}
                                 </h4>
-                                    <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1TegYoTbNjmqRHtrv_BntgIzWQyXX-Adr/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                        <img src={pdf} alt="pdf" className="popular-pdf" />
-                                        {t("view")}
-                                    </a>
+                                {
+                                    i18n.language === "English" ? (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1TegYoTbNjmqRHtrv_BntgIzWQyXX-Adr/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    ) : (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1ep7jQmejgXiYJJlDogyP9bJSHBjidRJN/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    )
+                                }
+                                    
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -338,10 +349,21 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleTwo")}
                                 </h4>
-                                 <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1e9ySfTGljxTufui9YgZ0_BcAMljpLPna/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                        <img src={pdf} alt="pdf" className="popular-pdf" />
-                                        {t("view")}
-                                    </a>
+                                
+                                {
+                                    i18n.language === "English" ? (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1e9ySfTGljxTufui9YgZ0_BcAMljpLPna/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    ) : (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1iiiVa4DohYrLcqqucKB2kMsJmDPMlUSL/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    )
+                                }
+                                
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -359,10 +381,19 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleThree")}
                                 </h4>
-                                 <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1smYXGAKAXRYcvyXF_C0AZnc8J9OY01si/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                        <img src={pdf} alt="pdf" className="popular-pdf" />
-                                        {t("view")}
-                                    </a>
+                                {
+                                    i18n.language === "English" ? (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1smYXGAKAXRYcvyXF_C0AZnc8J9OY01si/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    ) : (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1BfzVRcxq7vcGjijxn8bQ6yEbjrDykqlw/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    )
+                                }
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -380,10 +411,20 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleFour")}
                                 </h4>
-                                 <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1Ei_HD47-3SYX6E1npTIhHcrxiPSHETFe/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                        <img src={pdf} alt="pdf" className="popular-pdf" />
-                                        {t("view")}
-                                    </a>
+                                {
+                                    i18n.language === "English" ? (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1Ei_HD47-3SYX6E1npTIhHcrxiPSHETFe/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    ) : (
+                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1v1Lby8DgCGeb8tgDxQchnUmvOUbOehTl/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
+                                            <img src={pdf} alt="pdf" className="popular-pdf" />
+                                            {t("view")}
+                                        </a>
+                                    )
+                                }
+                                
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
