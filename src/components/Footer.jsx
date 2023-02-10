@@ -28,7 +28,7 @@ export const Footer = () => {
                     </ul>
                     <ul className="footer-info-wrapper">
                       <li className="footer-info">{t("footerAddress")}</li>
-                      <li className="footer-info"><a href="tell:+996501008988" className="footer-contact">+996 501 008 988</a></li>
+                      <li className="footer-info"><a href="tel:+996501008988" className="footer-contact">+996 501 008 988</a></li>
                       <li className="footer-info"><a href="mailto:mview.office@gmail.com" className="footer-contact">mview.office@gmail.com</a></li>
                     </ul>
                     <div className="footer-cocial-wrapper">
