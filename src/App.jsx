@@ -74,15 +74,15 @@ function App() {
     ];
     const [send, setSend] = useState(false);
     const [sendSec, setSendSec] = useState(false);
-    const [reviewsOne, setReviewsOne] = useState(false)
-    const [reviewsTwo, setReviewsTwo] = useState(false)
+    const [reviewsOne, setReviewsOne] = useState(false);
+    const [reviewsTwo, setReviewsTwo] = useState(false);
 
     if (model) {
         document.querySelector("body").style.overflow = "hidden";
     } else {
         document.querySelector("body").style.overflow = "unset";
     }
-   
+
     const sendEmail = (e) => {
         e.preventDefault();
         setSend(true);
@@ -121,7 +121,7 @@ function App() {
                 }
             );
     };
-   
+
     console.log(i18n.language);
 
     return (
@@ -188,37 +188,41 @@ function App() {
                             alt="imgBlcok"
                             className="mission-block"
                         />
-                            <div className="mission-wrapper">
-                                <img src={missionFon} alt="fon" className="mission-fon" />
-                                <h2 className="mission-title">
-                                    {t("missionTitle")}
-                                </h2>
-                                {missionShow ? (
-                                    <p className="mission-descr">
-                                        {t("missionDescrTrue")}
-                                        <span
-                                            onClick={() =>
-                                                setMissionShow(!missionShow)
-                                            }
-                                        >
-                                            {" "}
-                                            {t("hide")}
-                                        </span>
-                                    </p>
-                                ) : (
-                                    <p className="mission-descr">
-                                        {t("missionDescrFalse")}
-                                        <span
-                                            onClick={() =>
-                                                setMissionShow(!missionShow)
-                                            }
-                                        >
-                                            {" "}
-                                            {t("missionBtnFalse")}
-                                        </span>
-                                    </p>
-                                )}
-                            </div>
+                        <div className="mission-wrapper">
+                            <img
+                                src={missionFon}
+                                alt="fon"
+                                className="mission-fon"
+                            />
+                            <h2 className="mission-title">
+                                {t("missionTitle")}
+                            </h2>
+                            {missionShow ? (
+                                <p className="mission-descr">
+                                    {t("missionDescrTrue")}
+                                    <span
+                                        onClick={() =>
+                                            setMissionShow(!missionShow)
+                                        }
+                                    >
+                                        {" "}
+                                        {t("hide")}
+                                    </span>
+                                </p>
+                            ) : (
+                                <p className="mission-descr">
+                                    {t("missionDescrFalse")}
+                                    <span
+                                        onClick={() =>
+                                            setMissionShow(!missionShow)
+                                        }
+                                    >
+                                        {" "}
+                                        {t("missionBtnFalse")}
+                                    </span>
+                                </p>
+                            )}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -227,7 +231,7 @@ function App() {
                     className="video-video"
                     width="auto"
                     height="auto"
-                    src="https://www.youtube.com/embed/z9LV1sf2eus"
+                    src="https://www.youtube.com/embed/fEuw4Hl04hU"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -304,13 +308,21 @@ function App() {
                                 {t("popularText")}
                             </p>
                         </div>
-                        <a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="popular-btn btn">
+                        <a
+                            href="https://www.instagram.com/mountain.view.kg/"
+                            target="_blank"
+                            className="popular-btn btn"
+                        >
                             {t("popularbtn")}
                         </a>
                     </div>
                     <div className="popular-wrapper">
                         <div className="popular-block">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Issyk-Kulmeer.jpg" alt="img" className="popular-bg" />
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Issyk-Kulmeer.jpg"
+                                alt="img"
+                                className="popular-bg"
+                            />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeOne")}
@@ -318,20 +330,36 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleOne")}
                                 </h4>
-                                {
-                                    i18n.language === "English" ? (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1TegYoTbNjmqRHtrv_BntgIzWQyXX-Adr/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    ) : (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1ep7jQmejgXiYJJlDogyP9bJSHBjidRJN/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    )
-                                }
-                                    
+                                {i18n.language === "English" ? (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1TegYoTbNjmqRHtrv_BntgIzWQyXX-Adr/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                ) : (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1ep7jQmejgXiYJJlDogyP9bJSHBjidRJN/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                )}
+
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -341,7 +369,11 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src={NimgSix} alt="img" className="popular-bg" />
+                            <img
+                                src={NimgSix}
+                                alt="img"
+                                className="popular-bg"
+                            />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeTwo")}
@@ -349,21 +381,37 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleTwo")}
                                 </h4>
-                                
-                                {
-                                    i18n.language === "English" ? (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1e9ySfTGljxTufui9YgZ0_BcAMljpLPna/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    ) : (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1iiiVa4DohYrLcqqucKB2kMsJmDPMlUSL/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    )
-                                }
-                                
+
+                                {i18n.language === "English" ? (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1e9ySfTGljxTufui9YgZ0_BcAMljpLPna/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                ) : (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1iiiVa4DohYrLcqqucKB2kMsJmDPMlUSL/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                )}
+
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -373,7 +421,11 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src="https://i.pinimg.com/originals/e0/51/84/e05184dffb69817245cb78916edbf252.png" alt="img" className="popular-bg" />
+                            <img
+                                src="https://i.pinimg.com/originals/e0/51/84/e05184dffb69817245cb78916edbf252.png"
+                                alt="img"
+                                className="popular-bg"
+                            />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeThree")}
@@ -381,19 +433,35 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleThree")}
                                 </h4>
-                                {
-                                    i18n.language === "English" ? (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1smYXGAKAXRYcvyXF_C0AZnc8J9OY01si/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    ) : (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1BfzVRcxq7vcGjijxn8bQ6yEbjrDykqlw/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    )
-                                }
+                                {i18n.language === "English" ? (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1smYXGAKAXRYcvyXF_C0AZnc8J9OY01si/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                ) : (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1BfzVRcxq7vcGjijxn8bQ6yEbjrDykqlw/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                )}
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -403,7 +471,11 @@ function App() {
                             </div>
                         </div>
                         <div className="popular-block">
-                            <img src="https://www.youlinmagazine.com/articles/heavenly-lake-in-mid-tian-shan-mountains.jpg" alt="img" className="popular-bg" />
+                            <img
+                                src="https://www.youlinmagazine.com/articles/heavenly-lake-in-mid-tian-shan-mountains.jpg"
+                                alt="img"
+                                className="popular-bg"
+                            />
                             <div className="popular-info">
                                 <span className="popular-time">
                                     {t("popularTimeFour")}
@@ -411,20 +483,36 @@ function App() {
                                 <h4 className="popular-subtitle">
                                     {t("popularSubtitleFour")}
                                 </h4>
-                                {
-                                    i18n.language === "English" ? (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1Ei_HD47-3SYX6E1npTIhHcrxiPSHETFe/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    ) : (
-                                        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1v1Lby8DgCGeb8tgDxQchnUmvOUbOehTl/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true" className="popular-som">
-                                            <img src={pdf} alt="pdf" className="popular-pdf" />
-                                            {t("view")}
-                                        </a>
-                                    )
-                                }
-                                
+                                {i18n.language === "English" ? (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1Ei_HD47-3SYX6E1npTIhHcrxiPSHETFe/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                ) : (
+                                    <a
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        href="https://docs.google.com/document/d/1v1Lby8DgCGeb8tgDxQchnUmvOUbOehTl/edit?usp=sharing&ouid=102442844624283755627&rtpof=true&sd=true"
+                                        className="popular-som"
+                                    >
+                                        <img
+                                            src={pdf}
+                                            alt="pdf"
+                                            className="popular-pdf"
+                                        />
+                                        {t("view")}
+                                    </a>
+                                )}
+
                                 <button
                                     onClick={() => setModel(!model)}
                                     className="popular-view btn"
@@ -433,8 +521,6 @@ function App() {
                                 </button>
                             </div>
                         </div>
-                        
-                    
                     </div>
                     <button className="popular-btn-another btn">
                         {t("popularbtn")}
@@ -468,10 +554,9 @@ function App() {
                             disableOnInteraction: false,
                             reverseDirection: true,
                         }}
-                      
                         modules={[Autoplay]}
                     >
-                        {images.map((item ) => (
+                        {images.map((item) => (
                             <SwiperSlide>
                                 <img src={item} key={item} alt="img" />
                             </SwiperSlide>
@@ -513,69 +598,86 @@ function App() {
                         <h2 className="reviews-title title">
                             {t("reviewsTitle")}
                         </h2>
-                       <div className="reviews-wrapper">
+                        <div className="reviews-wrapper">
                             <div className="reviews-block">
                                 <div className="reviews-ava-wrapper">
-                                <img
-                                    src={vaOne}
-                                    alt="avatar"
-                                    className="reviews-ava"
-                                />
+                                    <img
+                                        src={vaOne}
+                                        alt="avatar"
+                                        className="reviews-ava"
+                                    />
                                 </div>
                                 <div className="reviews-info">
                                     <div className="reviews-more">
                                         <span className="reviews-subtitle">
-                                        Begay A.
+                                            Begay A.
                                         </span>
                                     </div>
-                                    {
-                                        reviewsOne ?  (
-                                            <p className="reviews-descr">
-                                                {t("reviewsDescOneFull")}{" "}
-                                                <span onClick={() => setReviewsOne(!reviewsOne)}>{t("hide")}</span>
-                                            </p>
-                                        ) : (
-                                            <p className="reviews-descr">
-                                                {t("reviewsDescOne")}{" "}
-                                                <span onClick={() => setReviewsOne(!reviewsOne)}>{t("reviewsMore")}</span>
-                                            </p>
-                                        )
-                                    }
+                                    {reviewsOne ? (
+                                        <p className="reviews-descr">
+                                            {t("reviewsDescOneFull")}{" "}
+                                            <span
+                                                onClick={() =>
+                                                    setReviewsOne(!reviewsOne)
+                                                }
+                                            >
+                                                {t("hide")}
+                                            </span>
+                                        </p>
+                                    ) : (
+                                        <p className="reviews-descr">
+                                            {t("reviewsDescOne")}{" "}
+                                            <span
+                                                onClick={() =>
+                                                    setReviewsOne(!reviewsOne)
+                                                }
+                                            >
+                                                {t("reviewsMore")}
+                                            </span>
+                                        </p>
+                                    )}
+                                </div>
+                            </div>
+                            <div className="reviews-block">
+                                <div className="reviews-ava-wrapper">
+                                    <img
+                                        src={vaTwo}
+                                        alt="avatar"
+                                        className="reviews-ava"
+                                    />
+                                </div>
 
-                                    
-                                </div>
-                            </div>
-                            <div className="reviews-block">
-                                <div className="reviews-ava-wrapper">
-                                <img
-                                    src={vaTwo}
-                                    alt="avatar"
-                                    className="reviews-ava"
-                                />
-                                </div>
-                                
                                 <div className="reviews-info">
                                     <div className="reviews-more">
                                         <span className="reviews-subtitle">
-                                        Zhanat M.
+                                            Zhanat M.
                                         </span>
                                     </div>
-                                    {
-                                        reviewsTwo ?  (
-                                            <p className="reviews-descr">
-                                                {t("reviewsDescTwoFull")}{" "}
-                                                <span onClick={() => setReviewsTwo(!reviewsTwo)}>{t("hide")}</span>
-                                            </p>
-                                        ) : (
-                                            <p className="reviews-descr">
-                                                {t("reviewsDescTwo")}{" "}
-                                                <span onClick={() => setReviewsTwo(!reviewsTwo)}>{t("reviewsMore")}</span>
-                                            </p>
-                                        )
-                                    }
+                                    {reviewsTwo ? (
+                                        <p className="reviews-descr">
+                                            {t("reviewsDescTwoFull")}{" "}
+                                            <span
+                                                onClick={() =>
+                                                    setReviewsTwo(!reviewsTwo)
+                                                }
+                                            >
+                                                {t("hide")}
+                                            </span>
+                                        </p>
+                                    ) : (
+                                        <p className="reviews-descr">
+                                            {t("reviewsDescTwo")}{" "}
+                                            <span
+                                                onClick={() =>
+                                                    setReviewsTwo(!reviewsTwo)
+                                                }
+                                            >
+                                                {t("reviewsMore")}
+                                            </span>
+                                        </p>
+                                    )}
                                 </div>
                             </div>
-        
                         </div>
                     </div>
                 </div>
