@@ -304,7 +304,7 @@ function App() {
                                 {t("popularText")}
                             </p>
                         </div>
-                        <a href="https://www.instagram.com/mountain.view.kg/" className="popular-btn btn">
+                        <a href="https://www.instagram.com/mountain.view.kg/" target="_blank" className="popular-btn btn">
                             {t("popularbtn")}
                         </a>
                     </div>
